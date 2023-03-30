@@ -199,7 +199,7 @@ public class CameraService {
             }
             
             let videoDeviceInput = try AVCaptureDeviceInput(device: videoDevice)
-            
+            print(videoDevice.lensPosition)
             if session.canAddInput(videoDeviceInput) {
                 session.addInput(videoDeviceInput)
                 self.videoDeviceInput = videoDeviceInput
